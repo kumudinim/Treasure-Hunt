@@ -2,7 +2,7 @@
 This project is a web-based puzzle game that allows users to participate in a challenging and interactive puzzle game. The website allows users to create an account using their email address and password, and then they can start playing the game. The puzzle game has 8 clues  dead-ends.
   The website provides the player with their score at the end of the game. The puzzle game will restart  if a user refreshes the page.
 
-  Soft Skills Assessed:
+Soft Skills Assessed:
 1. Problem-solving:`The player is assessed based on his problem-solving skills.The capability of the user is determined with the ability to think critically on how to approach the problem.
 2.Listening Skills:An audio clip is included in the puzzle where the player is allowed to listen to the audio clip and answer the given question.
 
