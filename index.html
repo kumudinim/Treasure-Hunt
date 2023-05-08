@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Login</title>
+</head>
+<body>
+      <div class="container">
+        
+        <div class="box">
+            <div class="header">
+                <header> <img src="images/logo.png" alt=""></header>
+                <p>Log In to your treasure account</p>
+            </div>
+            <div class="input-box">
+                <label for="email">E-mail</label>
+                <input type="email" class="input-field" id="email" required>
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <label for="pass">Password</label>
+                <input type="password" class="input-field" id="pass" required>
+                <i class="bx bx-lock"></i>
+            </div>
+            <div class="input-box">
+                <center>
+                <a 
+                href="question1.html">
+                <input type="submit" id="submit" class="input-submit" value="Sign in" disabled>
+
+            </a>
+            </center>
+            <script>
+                // Get the email input and submit button elements
+                var emailInput = document.getElementById("email");
+                var submitButton = document.getElementById("submit");
+                
+                // Add event listener to the email input
+                emailInput.addEventListener("input", function() {
+                  // Check if the email input value is a valid email address
+                  if (emailInput.validity.valid) {
+                    // Enable the submit button if the email is valid
+                    submitButton.disabled = false;
+                  } else {
+                    // Disable the submit button if the email is invalid
+                    submitButton.disabled = true;
+                  }
+                });
+              </script>
+                <!--input type="submit" class="input-submit" value="Sign in"-->
+
+                <!--span>Sign Up</!--span-->
+                <!--a href="signup.html">Signup</!--a-->
+                <!--a href="question1.html">Sign in</!--a-->
+            </div>
+            
+        </div>
+        <div class="wrapper"></div>
+      </div>
+</body>
+</html>

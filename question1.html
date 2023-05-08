@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Treasure hunt</title>
+    <link rel="stylesheet" href="question.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start </button></div>
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Instructions</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>120 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't answer  once time goes off.</div>
+            <div class="info">4. You can't exit from the treasure hunt while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            <div class="info">6. You will be provided with the hints</div>
+            
+            
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit </button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Treasure Hunt</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">120</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+           
+            
+              
+            <div class="answer_list">
+             <!--Here I've inserted options from JavaScript-->
+            </div>
+            <label for="textbox">Write answer here</label>
+            <input id = "txtAnswerVlue" type = "text" id = "question1" placeholder="Write answer here">
+            <input id = "button" type = "button" value = "Submit" onclick="optionSelected(this)" />
+            <!--input id="reset" type="reset" value="clear"/-->
+       
+        </section>
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">The treasure's found</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay </button>
+            <button class="quit">Quit </button>
+        </div>
+    </div>
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="question.js"></script>
+    <!--Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="script.js"></script>
+</body>
+</html>
+</html>
